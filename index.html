@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f8f0">
+    <meta name="description" content="Свежие фрукты и ягоды с доставкой от магазина «Фрукт»">
+    <title>Фрукт — свежесть каждый день</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Фрукт — на главную">
+        <span class="brand-mark" aria-hidden="true">ф</span>
+        <span>фрукт<span class="brand-period">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О нас</a>
+        <a href="#delivery">Доставка</a>
+      </nav>
+      <a class="cart-button" href="#catalog" aria-label="Корзина, товаров: 0">
+        <span aria-hidden="true">♧</span>
+        <span class="cart-label">Корзина</span>
+        <span class="cart-count" aria-live="polite">0</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> С любовью к свежему</p>
+          <h1 id="hero-title">Фрукты,<br>которые <em>радуют</em></h1>
+          <p class="hero-description">Сочные, спелые и настоящие. Выбираем лучшее и привозим прямо к вашей двери.</p>
+          <a class="primary-button" href="#catalog">Выбрать фрукты <span aria-hidden="true">↗</span></a>
+          <div class="hero-note"><span aria-hidden="true">✳</span> Отборные фрукты каждый день</div>
+        </div>
+        <div class="hero-art" aria-label="Иллюстрация свежих фруктов">
+          <div class="sun-shape"></div>
+          <div class="fruit fruit-orange" aria-hidden="true">🍊</div>
+          <div class="fruit fruit-apple" aria-hidden="true">🍎</div>
+          <div class="fruit fruit-lemon" aria-hidden="true">🍋</div>
+          <div class="fruit fruit-avocado" aria-hidden="true">🥑</div>
+          <div class="fruit fruit-grapes" aria-hidden="true">🍇</div>
+          <span class="art-spark spark-one" aria-hidden="true">✳</span>
+          <span class="art-spark spark-two" aria-hidden="true">✦</span>
+          <span class="art-caption">вкус<br>солнца</span>
+        </div>
+      </section>
+
+      <section class="catalog section-wrap" id="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Всё самое спелое</p>
+            <h2 id="catalog-title">Наш каталог</h2>
+          </div>
+          <p class="catalog-subtitle">Польза и настроение<br>в каждой корзинке</p>
+        </div>
+        <div class="filter-list" role="group" aria-label="Фильтр товаров">
+          <button class="filter-button is-active" type="button" data-category="all" aria-pressed="true">Всё</button>
+          <button class="filter-button" type="button" data-category="fruit" aria-pressed="false">Фрукты</button>
+          <button class="filter-button" type="button" data-category="berries" aria-pressed="false">Ягоды</button>
+          <button class="filter-button" type="button" data-category="citrus" aria-pressed="false">Цитрусовые</button>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="promise section-wrap" id="about">
+        <div class="promise-icon" aria-hidden="true">✳</div>
+        <div>
+          <p class="eyebrow">Не просто фрукты</p>
+          <h2>Знаем, где растёт<br>ваша радость</h2>
+        </div>
+        <p>Работаем с небольшими хозяйствами и выбираем сезонные плоды на пике вкуса. Никаких компромиссов — только то, что с удовольствием положили бы на свой стол.</p>
+      </section>
+
+      <section class="delivery section-wrap" id="delivery">
+        <div class="delivery-text">
+          <p class="eyebrow">Уже скоро у вас</p>
+          <h2>Свежесть<br>не заставит ждать</h2>
+          <p>Бережно соберём заказ и доставим по городу в удобное для вас время.</p>
+        </div>
+        <div class="delivery-badge"><span aria-hidden="true">⌁</span><strong>Бесплатно</strong><span>от 2 500 ₽</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#" aria-label="Фрукт — на главную"><span class="brand-mark" aria-hidden="true">ф</span><span>фрукт<span class="brand-period">.</span></span></a>
+      <p>Хорошие фрукты. Хорошее настроение.</p>
+      <span>© 2025 Фрукт</span>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
